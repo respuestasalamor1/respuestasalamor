@@ -5,10 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
+  show: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toggleCollapse() {
+    this.show = !this.show
+  }
 }
