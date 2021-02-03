@@ -1,5 +1,10 @@
-<main>
-  <div class="divMain">
-    <router-outlet></router-outlet>
+<section class="d-flex" id="wrapper">
+  <app-sidebar></app-sidebar>
+  <div id="page-content-wrapper">
+    <app-header></app-header>
+    <div class="container-fluid" style="padding-bottom: 20px">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
   </div>
-</main>
+</section>
