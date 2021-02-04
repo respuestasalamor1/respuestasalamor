@@ -10,8 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent,
-    pathMatch: 'full'
+    component: HomeComponent
   },
   {
     path: '**',
