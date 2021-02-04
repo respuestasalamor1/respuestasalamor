@@ -14,4 +14,7 @@ export class HeaderComponent implements OnInit {
   toggleCollapse() {
     this.show = !this.show
   }
+  redirectHome() {
+    location.assign('/home');
+  }
 }
