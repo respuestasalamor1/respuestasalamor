@@ -12,6 +12,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +28,7 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     CommonModule,
     RouterModule,
+    NgbModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
