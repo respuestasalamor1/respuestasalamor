@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChatComponent } from './layout/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
