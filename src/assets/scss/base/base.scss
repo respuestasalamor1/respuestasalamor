@@ -145,6 +145,16 @@ mdb-card-img img.img-fluid {
 }
 .btn-bg-primary:hover {
   color: white !important;
-  background-color: #34392B !important;
+  background-color: #34392b !important;
   border-radius: 16px !important;
+}
+
+.block-13 .owl-dots .owl-dot.active > span,
+.block-14 .owl-dots .owl-dot.active > span,
+.block-15 .owl-dots .owl-dot.active > span {
+  background-color: #343a40 !important;
+}
+
+.site-section-heading.text-center:before {
+  background-color: #343a40 !important;
 }

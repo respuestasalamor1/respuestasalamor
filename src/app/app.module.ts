@@ -12,7 +12,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './layout/chat/chat.component';
 import { Trabajo1Component } from './modules/trabajo1/trabajo1.component';
 import { Trabajo2Component } from './modules/trabajo2/trabajo2.component';
@@ -48,6 +48,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     CommonModule,
     RouterModule,
     NgbModule,
+    NgbAlertModule,
     MDBBootstrapModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
