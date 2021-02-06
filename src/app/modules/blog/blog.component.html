@@ -1,1 +1,33 @@
-<p>blog works!</p>
+<div class="site-wrap">
+    <div class="site-section">
+        <div class="container">
+            <div class="row tittle-home">
+                <div class="col-md-12 text-center">
+                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Templo</span>
+                    <h2 class="site-section-heading text-uppercase text-center font-secondary">Blog</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-md-0 mb-5" *ngFor="let item of testimonials">
+                    <div class="testimonial">
+                        <div class="avatar mx-auto">
+                            <img src="{{item.img}}" alt="img-testimonials" class="rounded-circle z-depth-1 img-fluid">
+                        </div>
+                        <h4 class="font-weight-bold dark-grey-text mt-4">{{item.nombre}}</h4>
+                        <p class="font-weight-normal dark-grey-text">
+                            <i class="fas fa-quote-left pr-2"></i>{{item.descripcion}}
+                        </p>
+                        <div class="orange-text">
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star-half-alt"> </i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
