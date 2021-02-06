@@ -4,21 +4,41 @@
 .img-logo {
   width: 5%;
 }
+.btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+}
+
+.img-carousel {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tittle-home {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
 @media (max-device-width: 990px) {
   .img-logo {
     width: 11%;
   }
 }
-.btn-whatsapp {
-  display:block;
-  width:70px;
-  height:70px;
-  color: #fff;
-  position: fixed;
-  right:20px;
-  bottom:20px;
-  border-radius:50%;
-  line-height:80px;
-  text-align:center;
-  z-index:999;
+
+@media (min-device-width: 990px) {
+  .div-carousel {
+    width: 50%;
+    margin-left: 25%;
+  }
 }

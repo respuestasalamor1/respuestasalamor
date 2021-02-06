@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'dummy'`, () => {
+  it(`should have as title 'El Templo Sagrado'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('dummy');
+    expect(app.title).toEqual('El Templo Sagrado');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('dummy app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('El Templo Sagrado app is running!');
   });
 });
