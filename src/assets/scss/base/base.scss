@@ -134,3 +134,17 @@ mdb-card-img img.img-fluid {
     margin-left: 25%;
   }
 }
+
+.bg-primary {
+  background-color: #fff !important;
+}
+.btn-bg-primary {
+  color: white !important;
+  background-color: #343a40 !important;
+  border-radius: 16px !important;
+}
+.btn-bg-primary:hover {
+  color: white !important;
+  background-color: #34392B !important;
+  border-radius: 16px !important;
+}
