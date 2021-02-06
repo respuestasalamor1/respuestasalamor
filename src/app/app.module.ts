@@ -14,6 +14,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatComponent } from './layout/chat/chat.component';
+import { Trabajo1Component } from './modules/trabajo1/trabajo1.component';
+import { Trabajo2Component } from './modules/trabajo2/trabajo2.component';
+import { Trabajo3Component } from './modules/trabajo3/trabajo3.component';
+import { Trabajo4Component } from './modules/trabajo4/trabajo4.component';
+import { ServiciosComponent } from './modules/servicios/servicios.component';
+import { BlogComponent } from './modules/blog/blog.component';
+import { ContactenosComponent } from './modules/contactenos/contactenos.component';
+import { AcercaDeComponent } from './modules/acerca-de/acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +31,14 @@ import { ChatComponent } from './layout/chat/chat.component';
     SidebarComponent,
     FooterComponent,
     ChatComponent,
+    Trabajo1Component,
+    Trabajo2Component,
+    Trabajo3Component,
+    Trabajo4Component,
+    ServiciosComponent,
+    BlogComponent,
+    ContactenosComponent,
+    AcercaDeComponent,
   ],
   imports: [
     BrowserModule,

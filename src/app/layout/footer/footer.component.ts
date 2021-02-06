@@ -14,5 +14,17 @@ export class FooterComponent implements OnInit {
   redirectHome() {
     location.assign('/home');
   }
+  redirectServicio() {
+    location.assign('/servicios');
+  }
+  redirectBlog() {
+    location.assign('/blog');
+  }
+  redirectContactenos() {
+    location.assign('/contactenos');
+  }
+  redirectAcercaDe() {
+    location.assign('/acercade');
+  }
 
 }

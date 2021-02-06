@@ -8,7 +8,7 @@
                 <p>Somos expertos, con amplia experiencia ayudándote espiritualmente a mejorar tu vida, te ayudamos a
                     recuperar a tu ser amado sin importar la distancia o el sexo, contribuimos a mejorar tu felicidad.
                 </p>
-                <p><a href="#" class="btn btn-secondary text-white px-4">Ver Más</a></p>
+                <p><a (click)="redirectAcercaDe()" class="btn btn-secondary text-white px-4">Ver Más</a></p>
             </div>
             <div class="col-md-3 mb-4 mb-md-0 ml-auto">
                 <div class="row mb-4">
@@ -16,10 +16,10 @@
                         <h3 class="footer-heading mb-4 text-white">Menú Rápido</h3>
                         <ul class="list-unstyled">
                             <li><a (click)="redirectHome()">Inicio</a></li>
-                            <li><a href="#">Acerca de</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contáctenos</a></li>
-                            <li><a href="#">Servicios</a></li>
+                            <li><a (click)="redirectServicio()">Servicios</a></li>
+                            <li><a (click)="redirectBlog()">Blog</a></li>
+                            <li><a (click)="redirectContactenos()">Contáctenos</a></li>
+                            <li><a (click)="redirectAcercaDe()">Acerca de</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +48,8 @@
         </div>
         <div class="row pt-5 mt-5 text-center">
             <div class="col-md-12">
-                <p>Copyright &copy; All rights reserved by <a rel="noopener noreferrer" (click)="redirectHome()">El Templo Sagrado</a>
+                <p>Copyright &copy; All rights reserved by <a rel="noopener noreferrer" (click)="redirectHome()">El
+                        Templo Sagrado</a>
                 </p>
             </div>
         </div>
