@@ -22,6 +22,7 @@ import { ServiciosComponent } from './modules/servicios/servicios.component';
 import { BlogComponent } from './modules/blog/blog.component';
 import { ContactenosComponent } from './modules/contactenos/contactenos.component';
 import { AcercaDeComponent } from './modules/acerca-de/acerca-de.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { AcercaDeComponent } from './modules/acerca-de/acerca-de.component';
     CommonModule,
     RouterModule,
     NgbModule,
+    MDBBootstrapModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

@@ -30,6 +30,98 @@
   margin-bottom: 40px;
 }
 
+.h3-carousel {
+  color: white;
+}
+
+.carousel-multi-item .controls-top .btn-floating {
+  background: #343a40;
+  text-align: center;
+}
+.controls-top {
+  text-align: center;
+}
+.fa-chevron-right:before {
+  display: inline-block;
+  width: inherit;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 47px;
+}
+
+.fa-chevron-left:before {
+  display: inline-block;
+  width: inherit;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 47px;
+}
+
+.btn-floating {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%),
+    0 4px 15px 0 rgb(0 0 0 / 15%);
+  box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 47px;
+  height: 47px;
+}
+
+.btn-floating:before {
+  border-radius: 0;
+}
+
+a.waves-effect,
+a.waves-light {
+  display: inline-block;
+}
+
+.waves-effect {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a.waves-effect,
+a.waves-light {
+  display: inline-block;
+}
+
+.btn-secondary-dummy {
+  color: white !important;
+  background-color: #343a40 !important;
+  border-radius: 16px !important;
+  cursor: pointer !important;
+  border: solid 1px !important;
+}
+
+a .btn-primary {
+  color: white !important;
+  background-color: #343a40 !important;
+  border-radius: 16px !important;
+  cursor: pointer !important;
+  border: solid 1px !important;
+}
+mdb-card-img img.img-fluid {
+  height: 230px !important;
+}
+
 @media (max-device-width: 990px) {
   .img-logo {
     width: 11%;
