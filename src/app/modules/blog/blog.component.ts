@@ -10,65 +10,39 @@ export class BlogComponent implements OnInit {
   constructor() { }
   cards = [
     {
-      title: 'Card Title 1',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0054.jpg'
+      title: 'Amarres',
+      description: 'Somos expertos en realizar amarres de amor, y podemos lograr recuperar al ser amado. Que los sentimientos vuelvan a florecer, despertar el amor, la pasión y el deseo. Podemos doblegar su voluntad para que vuelva a respetarte y amarte de verdad. No hay problema si tiene otra relación.',
+      buttonText: 'Ver Más',
+      img: 'assets/images/IMG-20210204-WA0054.jpg',
+      redirect: '/trabajo1'
     },
     {
-      title: 'Card Title 2',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0057.jpg'
+      title: 'Union de Pareja',
+      description: 'Retorno de pareja, amarres de amor, hechizos de amor, conjuros para enamorar, rituales de atracción, magia blanca para el amor, regreso del ser amado, atracción de pareja, rituales para recuperar el amor, conjuros para alejar a terceras personas.',
+      buttonText: 'Ver Más',
+      img: 'assets/images/IMG-20210204-WA0057.jpg',
+      redirect: '/trabajo2'
     },
     {
-      title: 'Card Title 3',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0058.jpg'
+      title: 'Limpias y Protecciones',
+      description: 'Realizamos trabajos para ayudar a proteger de enemigos y ataques psíquicos que te puedan afectar, vive tranquilo y protegido de toda envidia y brujería. Mediante esta limpieza puede librarse de la mala suerte en los negocios y obtener un crecimiento económico que se puede notar al realizar cada uno de los rituales, todo con el fin de ayudarle a ser feliz.',
+      buttonText: 'Ver Más',
+      img: 'assets/images/IMG-20210204-WA0058.jpg',
+      redirect: '/trabajo3'
     },
     {
-      title: 'Card Title 4',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0059.jpg'
-    },
-    {
-      title: 'Card Title 5',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0060.jpg'
-    },
-    {
-      title: 'Card Title 6',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0063.jpg'
-    },
-    {
-      title: 'Card Title 7',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0064.jpg'
-    },
-    {
-      title: 'Card Title 8',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0065.jpg'
-    },
-    {
-      title: 'Card Title 9',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
-      img: 'assets/images/IMG-20210204-WA0068.jpg'
-    },
+      title: 'Magia Blanca',
+      description: 'La Magia Blanca es un medio ritualistico y mágico, guiada por una serie de conocimientos y dones que generalmente son usados para lograr y obtener resultados en trabajos específicos, bien sean de dinero, amor, salud, etc. La magia funciona efectivamente ya que no trae consecuencias negativas de ninguna clase o tipo, ni para ti, ni para los tuyos.',
+      buttonText: 'Ver Más',
+      img: 'assets/images/IMG-20210204-WA0059.jpg',
+      redirect: '/trabajo4'
+    }
   ];
   slides: any = [[]];
 
 
   ngOnInit(): void {
-    this.slides = this.chunk(this.cards, 3);
+    this.slides = this.chunk(this.cards, 2);
   }
   chunk(arr: any, chunkSize: number) {
     let R = [];
@@ -77,5 +51,4 @@ export class BlogComponent implements OnInit {
     }
     return R;
   }
-
 }
