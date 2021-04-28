@@ -137,7 +137,7 @@ mdb-card-img img.img-fluid {
 }
 
 .bg-primary {
-  background-color: #fff !important;
+  background-color: #212529 !important;
 }
 .btn-bg-primary {
   color: white !important;
@@ -216,6 +216,19 @@ mdb-card-img img.img-fluid {
   }
 }
 
-.color-primario {
-  color: #fff;
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+.imgr{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.container-fluid, .site-wrap {
+  background-color: #212529;
+}
+.site-section-heading.text-center:before {
+  background-color: white !important;
 }

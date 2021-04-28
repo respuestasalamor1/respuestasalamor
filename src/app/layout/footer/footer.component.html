@@ -1,67 +1,78 @@
 <div class="py-5 bg-primary">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-6 text-center mb-3 mb-md-0">
-                <a (click)="redirectContactenos()" class="btn btn-bg-primary font-primary text-uppercase" data-aos="fade-up"
-                    data-aos-delay="100">Contáctenos </a>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-6 text-center mb-3 mb-md-0">
+        <h5 class="h5 text-white"><span class="span">
+            <a (click)="redirectContactenos()" class="btn btn-bg-primary font-primary text-uppercase" data-aos="fade-up"
+              data-aos-delay="100">Contáctenos
+            </a>
+          </span>
+        </h5>
+
+      </div>
     </div>
+  </div>
 </div>
 <footer class="site-footer bg-dark">
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3 class="footer-heading mb-4 text-white">TE PODEMOS AYUDAR</h3>
+        <p class="text-white">Con nuestros maestros podrás encontrar una mano amiga que te acompañará y guiará en la
+          búsqueda de
+          soluciones en las que te sientes desesperado(a).</p>
+        <p class="text-white">Somos expertos, con amplia experiencia ayudándote espiritualmente a mejorar tu vida, te
+          ayudamos a
+          recuperar a tu ser amado sin importar la distancia o el sexo, contribuimos a mejorar tu felicidad.
+        </p>
+
+        <h5 class="h5 text-white"><span class="span">
+          <a (click)="redirectAcercaDe()" class="btn btn-secondary-dummy text-white px-4">Ver Más</a>
+        </span>
+      </h5>
+      </div>
+      <div class="col-md-3 mb-4 mb-md-0 ml-auto">
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <h3 class="footer-heading mb-4 text-white">Menú Rápido</h3>
+            <ul class="list-unstyled">
+              <li class="text-white"><a (click)="redirectHome()"><h5 class="h5 text-white"><span class="span">Inicio</span></h5></a></li>
+              <li class="text-white"><a (click)="redirectServicio()"><h5 class="h5 text-white"><span class="span">Serv</span><span class="span">icios</span></h5></a></li>
+              <li class="text-white"><a (click)="redirectBlog()"><h5 class="h5 text-white"><span class="span">Blog</span></h5></a></li>
+              <li class="text-white"><a (click)="redirectContactenos()"><h5 class="h5 text-white"><span class="span">Contá</span><span class="span">ctanos</span></h5></a></li>
+              <li class="text-white"><a (click)="redirectAcercaDe()"><h5 class="h5 text-white"><span class="span">Acerca &nbsp;</span><span class="span"> De</span></h5></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
         <div class="row">
-            <div class="col-md-4 mb-4 mb-md-0">
-                <h3 class="footer-heading mb-4 text-white">TE PODEMOS AYUDAR</h3>
-                <p>Con nuestros maestros podrás encontrar una mano amiga que te acompañará y guiará en la búsqueda de
-                    soluciones en las que te sientes desesperado(a).</p>
-                <p>Somos expertos, con amplia experiencia ayudándote espiritualmente a mejorar tu vida, te ayudamos a
-                    recuperar a tu ser amado sin importar la distancia o el sexo, contribuimos a mejorar tu felicidad.
-                </p>
-                <p><a (click)="redirectAcercaDe()" class="btn btn-secondary-dummy text-white px-4">Ver Más</a></p>
-            </div>
-            <div class="col-md-3 mb-4 mb-md-0 ml-auto">
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <h3 class="footer-heading mb-4 text-white">Menú Rápido</h3>
-                        <ul class="list-unstyled">
-                            <li><a (click)="redirectHome()">Inicio</a></li>
-                            <li><a (click)="redirectServicio()">Servicios</a></li>
-                            <li><a (click)="redirectBlog()">Blog</a></li>
-                            <li><a (click)="redirectContactenos()">Contáctenos</a></li>
-                            <li><a (click)="redirectAcercaDe()">Acerca de</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="footer-heading mb-4 text-white">Redes Sociales</h3>
-                    </div>
-                    <div class="col-md-12">
-                        <p>
-                            <a rel="noopener noreferrer" href="https://www.facebook.com/" class="pb-2 pr-2 pl-0"
-                                target="_blank"><span class="icon-facebook"></span></a>
-                            <a rel="noopener noreferrer" href="https://twitter.com/" class="p-2" target="_blank"><span
-                                    class="icon-twitter"></span></a>
-                            <a rel="noopener noreferrer" href="https://www.instagram.com/" class="p-2"
-                                target="_blank"><span class="icon-instagram" target="_blank"></span></a>
-                            <a rel="noopener noreferrer" href="https://www.youtube.com/" class="p-2"
-                                target="_blank"><span class="icon-youtube" target="_blank"></span></a>
-                            <a rel="noopener noreferrer" href="https://www.whatsapp.com/" class="p-2"
-                                target="_blank"><span class="icon-whatsapp" target="_blank"></span></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-12">
+            <h3 class="footer-heading mb-4 text-white">Redes Sociales</h3>
+          </div>
+          <div class="col-md-12">
+            <p>
+              <a rel="noopener noreferrer" href="https://www.facebook.com/" class="pb-2 pr-2 pl-0 text-white"
+                target="_blank"><span class="icon-facebook"></span></a>
+              <a rel="noopener noreferrer" href="https://twitter.com/" class="p-2 text-white" target="_blank"><span
+                  class="icon-twitter"></span></a>
+              <a rel="noopener noreferrer" href="https://www.instagram.com/" class="p-2 text-white"
+                target="_blank"><span class="icon-instagram" target="_blank"></span></a>
+              <a rel="noopener noreferrer" href="https://www.youtube.com/" class="p-2 text-white" target="_blank"><span
+                  class="icon-youtube" target="_blank"></span></a>
+              <a rel="noopener noreferrer" href="https://www.whatsapp.com/" class="p-2 text-white" target="_blank"><span
+                  class="icon-whatsapp" target="_blank"></span></a>
+            </p>
+          </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
-            <div class="col-md-12">
-                <p>Copyright &copy; All rights reserved by <a rel="noopener noreferrer" (click)="redirectHome()">El
-                        Templo Sagrado</a>
-                </p>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <p>Copyright &copy; All rights reserved by <a rel="noopener noreferrer" (click)="redirectHome()">El
+            Templo Sagrado</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </footer>

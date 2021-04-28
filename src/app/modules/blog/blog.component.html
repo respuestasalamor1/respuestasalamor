@@ -1,33 +1,73 @@
 <div class="site-wrap">
-    <div class="site-section">
-        <div class="container">
-            <div class="row tittle-home">
-                <div class="col-md-12 text-center">
-                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Templo</span>
-                    <h2 class="site-section-heading text-uppercase text-center font-secondary">Blog</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4 mb-md-0 mb-5" *ngFor="let item of testimonials">
-                    <div class="testimonial">
-                        <div class="avatar mx-auto">
-                            <img src="{{item.img}}" alt="img-testimonials" class="rounded-circle z-depth-1 img-fluid">
-                        </div>
-                        <h4 class="font-weight-bold dark-grey-text mt-4">{{item.nombre}}</h4>
-                        <p class="font-weight-normal dark-grey-text">
-                            <em class="fas fa-quote-left pr-2"></em>{{item.descripcion}}
-                        </p>
-                        <div class="orange-text">
-                            <em class="fas fa-star"> </em>
-                            <em class="fas fa-star"> </em>
-                            <em class="fas fa-star"> </em>
-                            <em class="fas fa-star"> </em>
-                            <em class="fas fa-star-half-alt"> </em>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+  <div class="site-section">
+    <div class="container">
+      <div class="row tittle-home">
+        <div class="col-md-12 text-center">
+          <span class="caption d-block mb-2 font-secondary font-weight-bold text-white">Templo</span>
+          <h2 class="site-section-heading text-uppercase text-center font-secondary text-white">Blog</h2>
         </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-md-0 mb-5" *ngFor="let item of testimonials">
+          <div class="testimonial">
+            <div class="avatar mx-auto">
+              <img src="{{item.img}}" alt="img-testimonials" class="rounded-circle z-depth-1 img-fluid">
+            </div>
+            <h4 class="font-weight-bold dark-grey-text mt-4 text-white">{{item.nombre}}</h4>
+            <p class="font-weight-normal dark-grey-text text-white">
+              <em class="fas fa-quote-left pr-2"></em>{{item.descripcion}}
+            </p>
+            <div class="orange-text" *ngIf="item.star === 1">
+              <em class="fas fa-star"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 1.5">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star-half-alt"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 2">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 2.5">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star-half-alt"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 3">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 3.5">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star-half-alt"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 4">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 4.5">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star-half-alt"> </em>
+            </div>
+            <div class="orange-text" *ngIf="item.star === 5">
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+              <em class="fas fa-star"> </em>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+  </div>
 </div>

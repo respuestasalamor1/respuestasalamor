@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <span class="caption d-block mb-2 font-secondary font-weight-bold">Templo</span>
-                    <h2 class="site-section-heading text-uppercase text-center font-secondary">Servicios</h2>
+                    <span class="caption d-block mb-2 font-secondary font-weight-bold text-white">Templo</span>
+                    <h2 class="site-section-heading text-uppercase text-center font-secondary text-white">Servicios</h2>
                 </div>
             </div>
             <div class="row">
@@ -13,17 +13,16 @@
                         <div class="media-image" *ngFor="let item of cards">
                             <img src="{{item.img}}" alt="Image" class="img-fluid">
                             <div class="media-image-body">
-                                <h2 class="font-secondary text-uppercase">{{item.title}}</h2>
+                                <h2 class="font-secondary text-uppercase text-white">{{item.title}}</h2>
                                 <h6>
                                     <div class="section-counter">
                                         <div class="counter"><span
-                                                class="caption d-block mb-2 font-secondary font-weight-bold">{{item.description}}</span><span
-                                                class="number text-dark" data-number="1000">0</span>
+                                                class="caption d-block mb-2 font-secondary font-weight-bold text-white">{{item.description}}</span>
                                         </div>
                                     </div>
                                 </h6>
                                 <p><a href="{{item.redirect}}"
-                                        class="btn btn-dark text-white px-4">{{item.buttonText}}</a></p>
+                                        class="btn btn-dark text-white px-4 text-white">{{item.buttonText}}</a></p>
                             </div>
                         </div>
                     </div>
