@@ -42,6 +42,14 @@ export class ServiciosComponent implements OnInit {
       img: 'assets/images/IMG-20210204-WA0059.jpg',
       redirect: '/trabajo4',
       value: 183
+    },
+    {
+      title: 'Lectura del Tarot',
+      description: 'Antes de comenzar con tu lectura de Tarot es muy importante que te conectes con la tierra. Esto va a protegerte de la mala energía y ayudará a que te conectes con tus Ángeles Guardianes y Guía Espiritual. Si es que esto suena demasiado para ti entonces cierra los ojos y respira. Inhala y exhala lentamente diez veces y piensa en algo maravilloso que te hace feliz. Cuando estés listo para comenzar con tu lectura de Tarot, contáctanos para que disfrutes de la mejor experiencia.',
+      buttonText: 'Ver Más',
+      img: 'assets/images/tarot.jpeg',
+      redirect: '/trabajo5',
+      value: 2089
     }
   ];
   slides: any = [[]];

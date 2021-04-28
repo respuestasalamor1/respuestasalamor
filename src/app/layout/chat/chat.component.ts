@@ -10,12 +10,16 @@ export class ChatComponent implements OnInit {
 
   ngOnInit(): void {
     this.validatorPolicy = false;
+    const valPolicy = sessionStorage.getItem('validatorPolicy');
+    this.validatorPolicy = valPolicy == 'true' ? true : false;
   }
 
   validatorPol() {
     if (this.validatorPolicy) {
       this.validatorPolicy = false;
+      sessionStorage.setItem('validatorPolicy', 'false');
     } else
       this.validatorPolicy = true;
+    sessionStorage.setItem('validatorPolicy', 'true');
   }
 }
