@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'El Templo Sagrado';
+  title = 'El Templo De Horus';
 }
